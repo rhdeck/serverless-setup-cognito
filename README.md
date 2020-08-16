@@ -43,7 +43,7 @@ npx @raydeck/serverless-setup-cognito [options]
 
 • **clientName**: *any*
 
-*Defined in [bin.ts:28](https://github.com/rhdeck/serverless-setup-cognito/blob/13bffe0/src/bin.ts#L28)*
+*Defined in [bin.ts:28](https://github.com/rhdeck/serverless-setup-cognito/blob/616155d/src/bin.ts#L28)*
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 • **clientPath**: *any*
 
-*Defined in [bin.ts:28](https://github.com/rhdeck/serverless-setup-cognito/blob/13bffe0/src/bin.ts#L28)*
+*Defined in [bin.ts:28](https://github.com/rhdeck/serverless-setup-cognito/blob/616155d/src/bin.ts#L28)*
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 • **cognitoPath**: *any*
 
-*Defined in [bin.ts:28](https://github.com/rhdeck/serverless-setup-cognito/blob/13bffe0/src/bin.ts#L28)*
+*Defined in [bin.ts:28](https://github.com/rhdeck/serverless-setup-cognito/blob/616155d/src/bin.ts#L28)*
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 • **region**: *any*
 
-*Defined in [bin.ts:28](https://github.com/rhdeck/serverless-setup-cognito/blob/13bffe0/src/bin.ts#L28)*
+*Defined in [bin.ts:28](https://github.com/rhdeck/serverless-setup-cognito/blob/616155d/src/bin.ts#L28)*
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 • **stage**: *any*
 
-*Defined in [bin.ts:28](https://github.com/rhdeck/serverless-setup-cognito/blob/13bffe0/src/bin.ts#L28)*
+*Defined in [bin.ts:28](https://github.com/rhdeck/serverless-setup-cognito/blob/616155d/src/bin.ts#L28)*
 
 ## Functions
 
@@ -83,7 +83,7 @@ ___
 
 ▸ **getConfig**(`__namedParameters`: object): *Promise‹object›*
 
-*Defined in [index.ts:7](https://github.com/rhdeck/serverless-setup-cognito/blob/13bffe0/src/index.ts#L7)*
+*Defined in [index.ts:7](https://github.com/rhdeck/serverless-setup-cognito/blob/616155d/src/index.ts#L7)*
 
 **Parameters:**
 
@@ -106,7 +106,7 @@ ___
 
 ▸ **writeConfig**(`config`: PromiseValue‹ReturnType‹typeof getConfig››, `path`: string): *void*
 
-*Defined in [index.ts:54](https://github.com/rhdeck/serverless-setup-cognito/blob/13bffe0/src/index.ts#L54)*
+*Defined in [index.ts:54](https://github.com/rhdeck/serverless-setup-cognito/blob/616155d/src/index.ts#L54)*
 
 **Parameters:**
 
