@@ -26,9 +26,9 @@ export async function getConfig({
   }
   const r = await getResources({ region, stage, path: cognitoPath });
   const candidates = Object.entries(r).find(([key, _]) =>
-    key.includes("UserPool")
+    key.startsWith("CognitoUserPool")
   );
-  const userPoolId = candidates && candidates[1];
+  const userPoolId = (candidates && candidates[1]) || "";
   if (!clientPath) {
     clientPath = client || appsync;
   }
