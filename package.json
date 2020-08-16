@@ -1,27 +1,26 @@
 {
-  "name": "template",
-  "private": true,
+  "name": "@raydeck/serverless-setup-cognito",
   "version": "1.0.0",
-  "description": "",
+  "description": "Create cognito config file for use by amplify in serverless monorepos",
   "main": "lib/index.js",
   "bin": "lib/bin.js",
   "scripts": {
     "pre-commit": "(git-branch-is --not main || (set -u && echo $ALLOWMAIN)) && yarn test",
     "test": "tsc --noEmit",
-    "build": "tsc && chmod +x lib/bin.js",
+    "build": "tsc && chmod +x lib/bin.js && yarn pack -f package.tgz",
     "docs": "typedoc --theme markdown --readme none --mode file --excludeNotExported --includeVersion --out docstemp && commanderdoc markdown lib/bin.js -o docstemp/__cli.md --cli-name \"npx `jq -r .name package.json`\" && rm README.md ; mv docstemp/README.md docstemp/_library.md && cp TOP.md docstemp/README.md ; concat-md docstemp > README.md && rm -rf docstemp",
     "prepublishOnly": "yarn build && yarn docs && git commit README.md -m \"docs: updating docs\" && git push"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rhdeck/base.git"
+    "url": "git+https://github.com/rhdeck/serverless-setup-cognito.git"
   },
   "author": "Ray Deck",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rhdeck/base/issues"
+    "url": "https://github.com/rhdeck/serverless-setup-cognito/issues"
   },
-  "homepage": "https://github.com/rhdeck/base#readme",
+  "homepage": "https://github.com/rhdeck/serverless-setup-cognito#readme",
   "devDependencies": {
     "@commitlint/cli": "^9.1.1",
     "@commitlint/config-conventional": "^9.1.1",
@@ -30,6 +29,7 @@
     "concat-md": "^0.3.5",
     "git-branch-is": "^4.0.0",
     "husky": "^4.2.5",
+    "type-fest": "^0.16.0",
     "typedoc": "^0.17.8",
     "typedoc-plugin-markdown": "^2.4.0",
     "typescript": "^3.9.7"
@@ -39,6 +39,9 @@
     "lib"
   ],
   "dependencies": {
+    "@raydeck/serverless-base": "^1.0.4",
+    "@raydeck/serverless-resources": "^3.0.1",
+    "@raydeck/serverless-stage": "^3.0.2",
     "commander": "^6.0.0",
     "install-peers-cli": "^2.2.0"
   }
