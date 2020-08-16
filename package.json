@@ -1,6 +1,6 @@
 {
   "name": "@raydeck/serverless-setup-cognito",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create cognito config file for use by amplify in serverless monorepos",
   "main": "lib/index.js",
   "bin": "lib/bin.js",
