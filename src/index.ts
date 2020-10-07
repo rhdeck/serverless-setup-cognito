@@ -1,7 +1,7 @@
 import { join } from "path";
 import { existsSync, mkdirSync, writeFileSync, readFileSync } from "fs";
 import { getResources } from "@raydeck/serverless-resources";
-import { findStage } from "@raydeck/serverless-stage";
+import { findRegion, findStage } from "@raydeck/serverless-stage";
 import { getServerlessConfig } from "@raydeck/serverless-base";
 import type { PromiseValue } from "type-fest";
 export async function getConfig({
@@ -24,6 +24,7 @@ export async function getConfig({
   if (!cognitoPath) {
     if (cognito) cognitoPath = cognito;
   }
+  if (!region) region = findRegion();
   const r = await getResources({ region, stage, path: cognitoPath });
   const candidates = Object.entries(r).find(([key, _]) =>
     key.startsWith("CognitoUserPool")

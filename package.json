@@ -39,9 +39,9 @@
     "lib"
   ],
   "dependencies": {
-    "@raydeck/serverless-base": "^1.0.4",
-    "@raydeck/serverless-resources": "^3.0.1",
-    "@raydeck/serverless-stage": "^3.0.2",
+    "@raydeck/serverless-base": "^1.0.5",
+    "@raydeck/serverless-resources": "^3.1.1",
+    "@raydeck/serverless-stage": "^3.1.0",
     "commander": "^6.0.0",
     "install-peers-cli": "^2.2.0"
   }
